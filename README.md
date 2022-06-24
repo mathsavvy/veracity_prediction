@@ -5,6 +5,8 @@ Task: Build an ML system to verify the veracity of claims.
 
 Dataset link: https://huggingface.co/datasets/health_fact
 
+Pretrained huggingface model used: : https://huggingface.co/yikuan8/Clinical-Longformer
+
 **Solution:** Modelled veracity verification as a multi-class classification problem. Given a pair of 'claim' and 'source or evidence' in natural language, one of the four veracity classes (true, false, unproven, mixture) is predicted. This is a natural language inference task where a claim is verified against evidence for veracity. Following steps were taken to build the ML system:
 
 The dataset was downloaded as train, validation and test splits using huggingface's datasets library.
