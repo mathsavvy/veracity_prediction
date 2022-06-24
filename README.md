@@ -15,4 +15,39 @@ Since the data consists of very long text instances about health related claims,
 
 Distributed training was performed on a 4 gpu machine using huggingface's accelerate library.
 
-# **Note:** Due to github sixe limits, the model .bin file was not uploaded to models/2 directory. Please download the model file from https://drive.google.com/drive/folders/17-HGOm59_YwBKD8OmQNgyxhzojcjZgjL?usp=sharing and place in the models/2 directory to run the evaluation code.
+# Performance of the final model:
+
+## Validation set:
+
+Loss: 0.58121
+
+Micro F1: 0.73229
+
+Macro F1: 0.636882
+
+False F1: 0.67
+
+Mixture F1: 0.46
+
+True F1: 0.90
+
+Unproven F1: 0.52
+
+## Test set:
+
+Loss: 0.646326
+
+Micro F1: 0.729116
+
+Macro F1: 0.64037
+
+False F1: 0.71
+
+Mixture F1: 0.51
+
+True F1: 0.87
+
+Unproven F1: 0.47
+
+
+**Note:** Due to github size limits, the model .bin file was not uploaded to models/2 directory. Please download the model file from https://drive.google.com/drive/folders/17-HGOm59_YwBKD8OmQNgyxhzojcjZgjL?usp=sharing and place in the models/2 directory to run the evaluation code.
