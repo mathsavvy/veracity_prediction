@@ -11,7 +11,7 @@ The dataset was downloaded as train, validation and test splits using huggingfac
 Data was preprocessed by combining 'claim' and 'main_text' columns and oversampling the minority class.
 A pretrained tokenizer was used to tokenize and convert input text into indices and attention masks.
 Since the data consists of very long text instances about health related claims, the **Clinical-Longformer** was used with a sequence classification head to train a multi-class classification network.
-# Clinical-Longformer is a clinical knowledge enriched version of Longformer that was further pre-trained using MIMIC-III clinical notes. It allows up to 4,096 tokens as the model input.
+## Clinical-Longformer is a clinical knowledge enriched version of Longformer that was further pre-trained using MIMIC-III clinical notes. It allows up to 4,096 tokens as the model input.
 
 Distributed training was performed on a 4 gpu machine using huggingface's accelerate library.
 
